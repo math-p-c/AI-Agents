@@ -29,7 +29,7 @@ def main():
     modelo = criar_assistente()
 
     while True:
-        pergunta = input("Você: ").strip()
+        pergunta = input("Você:\n").strip()
 
         if pergunta.lower() == 'sair':
             print("Até logo!")
@@ -39,7 +39,7 @@ def main():
             continue
 
         resposta = conversar(modelo, pergunta)
-        print(f"Assistente: {resposta}")
+        print(f"Assistente:\n{resposta}")
 
 if __name__ == "__main__":
     main()
